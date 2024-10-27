@@ -6,9 +6,29 @@
 
 namespace vsite::oop::v2
 {
-/*
-* class declaration
-*/
+        class color {
+        private:
+            double red;   
+            double green; 
+            double blue;  
 
+        public:
+            color();
 
+            void set_red(double r);
+            void set_green(double g);
+            void set_blue(double b);
+
+            double get_red() const;
+            double get_green() const;
+            double get_blue() const;
+
+            color(const color& other);
+
+            color& operator=(const color& other);
+
+            uint32_t get_color_ref() const;
+
+            double get_luminance() const;
+        };
 }
