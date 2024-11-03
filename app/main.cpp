@@ -1,12 +1,8 @@
 #include <iostream>
 #include <format>
 #include "app.h"
-#include "C:\vsite\oop\v01\app\app.h"
-#include "C:\vsite\oop\v01\app\app.cpp"
-
 
 using namespace vsite::oop::v2;
-using namespace vsite::oop::v1;
 
 int main()
 {
@@ -21,5 +17,5 @@ int main()
 	c.set_green(g);
 	c.set_blue(b);
 
-	std::cout << to_hex(c.get_color_ref());
+	std::cout << std::format("{:X}", c.get_color_ref());
 }
