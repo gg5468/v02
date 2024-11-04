@@ -21,15 +21,6 @@ namespace vsite::oop::v2
     double color::get_green() const { return green; }
     double color::get_blue() const { return blue; }
 
-    color& color::operator=(const color& other) {
-        if (this != &other) {
-            red = other.red;
-            green = other.green;
-            blue = other.blue;
-        }
-        return *this;
-    }
-
     uint32_t color::get_color_ref() const {
         return RGB(static_cast<int>(red * 255), static_cast<int>(green * 255), static_cast<int>(blue * 255));
     }

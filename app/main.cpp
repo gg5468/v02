@@ -4,6 +4,10 @@
 
 using namespace vsite::oop::v2;
 
+std::string to_hex(unsigned int n) {
+	return std::format("{:X}", n);
+};
+
 int main()
 {
 	color c;
@@ -17,5 +21,5 @@ int main()
 	c.set_green(g);
 	c.set_blue(b);
 
-	std::cout << std::format("{:X}", c.get_color_ref());
+	std::cout << to_hex(c.get_color_ref());
 }
