@@ -21,8 +21,6 @@ namespace vsite::oop::v2
     double color::get_green() const { return green; }
     double color::get_blue() const { return blue; }
 
-    color::color(const color& other) : red(other.red), green(other.green), blue(other.blue) {}
-
     color& color::operator=(const color& other) {
         if (this != &other) {
             red = other.red;

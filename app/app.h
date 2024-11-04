@@ -23,8 +23,6 @@ namespace vsite::oop::v2
             double get_green() const;
             double get_blue() const;
 
-            color(const color& other);
-
             color& operator=(const color& other);
 
             uint32_t get_color_ref() const;
